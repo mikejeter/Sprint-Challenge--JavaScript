@@ -14,11 +14,7 @@
 
 // Using your dinosaur objects, log answers to these questions:
 
-const dinosaurs = {
-  tyrannosaurus,
-  stegosaurus,
-  velociraptor
-}
+
 
 const tyrannosaurus = {
   "diet": "carnivorous",
@@ -42,16 +38,16 @@ const velociraptor = {
 };
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(Object.entries(tyrannosaurus)[1]);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(Object.entries(velociraptor)[0]);
 
 // How long was a stegosaurus?
-console.log();
+console.log(Object.entries(stegosaurus)[2]);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(Object.entries(tyrannosaurus)[3]);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.

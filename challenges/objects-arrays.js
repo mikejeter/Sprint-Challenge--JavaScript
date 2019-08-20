@@ -109,10 +109,10 @@ const uni = [];
 
 for (let i = 0; i < graduates.length; i++) {
   uni.push(graduates[i].university.match(/Uni/))
-  console.log(uni[i])
+  console.log(uni[i]);
 }
 
-console.log(uni);
+
 
 
 // ==== ADVANCED Array Methods ====
@@ -166,16 +166,26 @@ console.log(lowerCase.map(item => item.toLowerCase()));
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
+let lowerPopulation = [];
 
+lowerPopulation = zooAnimals.filter(word => word.population < 5);
+console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
+let populationTotal = 0;
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+let population = []
+zooAnimals.forEach(function (item) {
+  population.push(item.population)
+})
 
 
+populationTotal = population.reduce(reducer);
 console.log(populationTotal);
 
 

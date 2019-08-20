@@ -50,6 +50,7 @@ const lastName = 'Poppins';
 function greeting() {
   console.log(`Hello ${firstName} ${lastName}, nice to meet you!`); 
 }
+greeting();
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2, 2, add); // 4
